@@ -37,30 +37,30 @@ const CountDown = ({ targetDate }) => {
   const pad = (num) => String(num).padStart(2, "0");
 
   return (
-    <div className="flex justify-center text-white font-bold text-sm md:text-lg lg:text-xl font-[superMario] gap-0 md:gap-2">
+    <div className="flex justify-center text-white font-bold text-sm md:text-lg lg:text-lg font-[superMario] gap-0 md:gap-2">
       <div className="py-1 md:py-2 px-2 md:px-4 flex flex-col gap-0 items-center justify-center">
-        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
+        <p className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
           {pad(timeLeft.days)}:
         </p>
-        <p className="uppercase text-xs md:text-sm lg:text-base">Days</p>
+        <p className="uppercase text-xs md:text-sm lg:text-sm">Days</p>
       </div>
       <div className="py-1 md:py-2 px-2 md:px-4 flex flex-col gap-0 items-center justify-center -ml-2 md:-ml-4">
-        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
+        <p className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
           {pad(timeLeft.hours)}:
         </p>
-        <p className="text-xs md:text-sm lg:text-base">Hours</p>
+        <p className="text-xs md:text-sm lg:text-sm">Hours</p>
       </div>
       <div className="py-1 md:py-2 px-2 md:px-4 flex flex-col gap-0 items-center justify-center -ml-2 md:-ml-4">
-        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
+        <p className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
           {pad(timeLeft.minutes)}:
         </p>
-        <p className="text-xs md:text-sm lg:text-base">Minutes</p>
+        <p className="text-xs md:text-sm lg:text-sm">Minutes</p>
       </div>
       <div className="py-1 md:py-2 px-2 md:px-4 flex flex-col gap-0 items-center justify-center -ml-2 md:-ml-4">
-        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
+        <p className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
           {pad(timeLeft.seconds)}
         </p>
-        <p className="text-xs md:text-sm lg:text-base">Seconds</p>
+        <p className="text-xs md:text-sm lg:text-sm">Seconds</p>
       </div>
     </div>
   );

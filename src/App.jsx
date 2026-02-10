@@ -6,6 +6,7 @@ import Faq from './sections/Faq';
 import Events from './sections/Events';
 import SponsorshipForm from './components/SponsorshipForm';
 import SponsorSection from './sections/SponsorSection';
+import Footer from './sections/Footer';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <SponsorSection/>
             {/* <Events/> */}
             <Faq/>
+            <Footer/>
         </div>
     );
 }

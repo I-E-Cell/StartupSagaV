@@ -6,7 +6,7 @@ function PrizePool() {
   return (
     <section
       id="prize-pool"
-      className="relative w-full min-h-[55vh] md:min-h-[100vh] flex items-center justify-center px-4"
+      className="relative w-full min-h-[55vh] md:min-h-[140vh] flex items-center justify-center px-4"
       style={{
         backgroundImage: `url(${RedBg})`,
         backgroundSize: 'cover',

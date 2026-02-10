@@ -1,6 +1,6 @@
 import React from "react";
-import BtnBg from "/assets/images/BtnBg.svg";
-import BtnUnion from "/assets/images/BtnUnion.svg";
+import BtnBg from "../assets/images/BtnBg.svg";
+import BtnUnion from "../assets/images/BtnUnion.svg";
 
 const Button = ({ title = "Register on Unstop", text = "text-2xl" }) => {
   return (

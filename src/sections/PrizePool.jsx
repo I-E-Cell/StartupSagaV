@@ -15,7 +15,7 @@ function PrizePool() {
       }}
     >
       <div
-        className="w-full max-w-[1000px] min-h-[260px] md:min-h-[360px] lg:min-h-[480px] mt-6 md:mt-10 flex flex-col items-center justify-center text-center font-[superMario] text-black"
+        className="w-full max-w-[1000px] min-h-[260px] md:min-h-[360px] lg:min-h-[480px] mt-12 md:mt-10 flex flex-col items-center justify-center text-center font-[superMario] text-black"
         style={{
           backgroundImage: `url(${CropCard})`,
           backgroundSize: '100% 100%',

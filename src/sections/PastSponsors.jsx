@@ -20,7 +20,7 @@ import FileCoin from "../assets/images/filecoin.png";
 import EthIndia from "../assets/images/EthIndia.png";
 import Polygon from "../assets/images/polygon.png";
 import WetnJoy from "../assets/images/WetnJoy.png";
-
+import redpanda from "../assets/images/redpanda.webp"
 
 const PastSponsors = () => {
 
@@ -98,15 +98,9 @@ const PastSponsors = () => {
   return (
     <div
       id="sponsors"
-      className="w-full relative bg-[#0064C8] flex flex-col items-center justify-start pt-36 pb-44"
-      style={{
-        background: `url(${BlueBg})`,
-        backgroundSize: "80%",
-        backgroundRepeat: "repeat",
-        backgroundPosition: "center",
-      }}
+      className="w-full relative bg-[#6b0501] flex flex-col items-center justify-start pt-36 pb-44"
     >
-      
+      <img src={redpanda} alt="" className="absolute top-1  left-0 -translate-y-full" />
 
       {/* Heading */}
       <div className="text-5xl md:text-7xl lg:text-9xl font-[superMario] font-bold text-white flex flex-col items-center px-4">

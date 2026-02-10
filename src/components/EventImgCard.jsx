@@ -4,12 +4,14 @@ import EventBorder from '../assets/images/eventimgcard.webp'
 
 function EventImgCard({imgSrc}) {
   return (
-    <div className='relative w-full max-w-[400px] mx-auto overflow-hidden rounded-lg'>
-        {/* Content image - positioned behind and clipped */}
-        <img src={imgSrc} alt="" className='w-full h-auto object-cover' />
+    <div className='relative w-full max-w-[450px] mx-auto'>
+        {/* Border frame - main element that sets the size */}
+        <img src={EventBorder} alt="" className='w-full h-auto relative z-10 pointer-events-none' />
         
-        {/* Border frame - positioned on top */}
-        <img src={EventBorder} alt="" className='absolute inset-0 w-full h-full z-10 pointer-events-none object-cover'/>
+        {/* Content image - positioned behind, inset to fit within border */}
+        <div className='absolute inset-[8%] overflow-hidden rounded-lg'>
+          <img src={imgSrc} alt="" className='w-full h-full object-cover' />
+        </div>
     </div>
   )
 }

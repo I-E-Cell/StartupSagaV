@@ -7,9 +7,9 @@ import grass from '../assets/images/grassfffff.webp'
 
 function SponsorSection() {
   return (
-    <div className="relative w-full -mb-4 lg:mb-3 ">
+    <div className="relative w-full  ">
             {/* Decorative Bamboo Leaves - Peeking over Hero2 */}
-            <img src={grass} alt="" className='absolute -top-[5%] lg:-top-[13%] left-0 w-full z-20' />
+            <img src={grass} alt="" className='absolute -translate-y-2/3 left-0 w-full z-20' />
 
             {/* Bamboo Background Container */}
             <div

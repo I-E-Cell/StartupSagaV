@@ -17,7 +17,7 @@ function App() {
             <PrizePool/>
             {/* <Events/> */}
             <SponsorSection/>
-            {/* <Events/> */}
+            <Events/>
             <Faq/>
             <PastSponsors/>
             <Footer/>

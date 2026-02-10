@@ -1,27 +1,23 @@
-import React from 'react';
-import BambooBorder from '../assets/images/bambooborder.webp';
+import React from 'react'
+import eventcard from '../assets/images/eventcard.png'
 
-function EventDetailCard({ title, description, className = '' }) {
+function EventDetailCard({eventName = "Next Niche", eventDescription= "Laboris quis sint consequat occaecat aliqua ipsum tempor culpa in anim dolore voluptate duis amet. Ea non culpa sint esse et laborum. Commodo esse deserunt Lorem est excepteur officia qui dolor esse laboris."}) {
   return (
-    <div
-      className={`w-full max-w-[920px] mx-auto ${className}`}
-      style={{
-        backgroundImage: `url(${BambooBorder})`,
-        backgroundSize: '100% 100%',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
-      <div className="m-4 sm:m-6 md:m-8 bg-[#7A4A1D] text-black text-center rounded-md px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10">
-        <h3 className="font-[superMario] text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide">
-          {title}
-        </h3>
-        <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
-          {description}
-        </p>
-      </div>
+    <div className='relative w-full max-w-[550px] mx-auto'>
+        {/* Bamboo frame background */}
+        <img src={eventcard} alt="" className='w-full h-auto' />
+        
+        {/* Content overlaid on the frame */}
+        <div className='absolute inset-0 flex flex-col items-center justify-center px-12 py-10 md:px-16 md:py-12'>
+            <h3 className='font-[superMario] text-xl md:text-2xl lg:text-3xl text-black text-center mb-4 md:mb-6'>
+                {eventName}
+            </h3>
+            <p className='text-black text-xs md:text-sm lg:text-base text-center leading-relaxed'>
+                {eventDescription}
+            </p>
+        </div>
     </div>
-  );
+  )
 }
 
-export default EventDetailCard;
+export default EventDetailCard

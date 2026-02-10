@@ -7,6 +7,7 @@ import Events from './sections/Events';
 import SponsorshipForm from './components/SponsorshipForm';
 import SponsorSection from './sections/SponsorSection';
 import Footer from './sections/Footer';
+import PastSponsors from './sections/PastSponsors';
 
 function App() {
     return (
@@ -14,9 +15,11 @@ function App() {
             <Hero/>
             <Timer/>
             <PrizePool/>
+            {/* <Events/> */}
             <SponsorSection/>
             {/* <Events/> */}
             <Faq/>
+            <PastSponsors/>
             <Footer/>
         </div>
     );

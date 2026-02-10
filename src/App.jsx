@@ -14,7 +14,7 @@ function App() {
             <Timer/>
             <PrizePool/>
             <SponsorSection/>
-            <Events/>
+            {/* <Events/> */}
             <Faq/>
         </div>
     );

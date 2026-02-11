@@ -4,6 +4,7 @@ import HeroBgAvif from '../assets/images/herobg.avif';
 import HeroBgWebp from '../assets/images/herobg.webp';
 import HeroPandaWebp from '../assets/images/heropanda.webp';
 import HeroPandaAvif from '../assets/images/heropanda.avif';
+import HeroHeading from '../assets/images/ssv.png';
 
 function Hero() {
     // Floating leaf animation variants
@@ -22,7 +23,7 @@ function Hero() {
     };
 
     return (
-        <div className="relative w-full h-[70vh] md:min-h-screen overflow-hidden">
+        <div className="relative w-full h-[70vh] md:min-h-screen overflow-hidden" id='home'>
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full">
                 <picture className="w-full h-full">
@@ -66,24 +67,30 @@ function Hero() {
                 </motion.div>
             ))}
 
-            {/* Content Container - Space for text/logo will go here */}
-            <div className="relative z-10 w-full h-full flex flex-col items-center justify-start pt-20">
-                {/* Text/Logo placeholder area */}
-                <div className="flex-1" />
-            </div>
-
-            {/* Panda Character - Bottom Center */}
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 w-[60%] md:w-[40%] lg:w-[35%]">
-                <picture>
-                    <source srcSet={HeroPandaAvif} type="image/avif"/>
-                    <source srcSet={HeroPandaWebp} type="image/webp"/>
-                    
+            {/* Content Container with Heading and Panda */}
+            <div className="relative z-10 w-full h-full flex flex-col items-center justify-between py-8 md:py-12">
+                {/* Hero Heading Logo */}
+                <div className="w-[70%] sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[35%] max-w-3xl px-4 mt-16 sm:mt-12 md:mt-16">
                     <img
-                        src={HeroPandaAvif}
-                        alt="Hero Panda"
-                        className="w-full h-auto object-contain"
+                        src={HeroHeading}
+                        alt="Startup Saga Edition 5"
+                        className="w-full h-auto object-contain drop-shadow-2xl"
                     />
-                </picture>
+                </div>
+
+                {/* Panda Character */}
+                <div className="w-[50%] md:w-[32%] lg:w-[28%] max-w-xl px-4 mb-0">
+                    <picture>
+                        <source srcSet={HeroPandaAvif} type="image/avif"/>
+                        <source srcSet={HeroPandaWebp} type="image/webp"/>
+                        
+                        <img
+                            src={HeroPandaAvif}
+                            alt="Hero Panda"
+                            className="w-full h-auto object-contain"
+                        />
+                    </picture>
+                </div>
             </div>
         </div>
     );

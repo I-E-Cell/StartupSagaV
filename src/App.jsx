@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import Timer from './sections/Timer';
 import PrizePool from './sections/PrizePool';
@@ -12,6 +13,7 @@ import PastSponsors from './sections/PastSponsors';
 function App() {
     return (
         <div className="h-screen w-screen font-[space] overflow-x-hidden relative">
+            <Navbar/>
             <Hero/>
             <Timer/>
             <PrizePool/>

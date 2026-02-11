@@ -20,7 +20,8 @@ import FileCoin from "../assets/images/filecoin.png";
 import EthIndia from "../assets/images/EthIndia.png";
 import Polygon from "../assets/images/polygon.png";
 import WetnJoy from "../assets/images/WetnJoy.png";
-import redpanda from "../assets/images/redpanda.webp"
+import redpanda from "../assets/images/redp.png"
+import RedBg from "../assets/images/redbgg.png"
 
 const PastSponsors = () => {
 
@@ -97,13 +98,24 @@ const PastSponsors = () => {
 
   return (
     <div
-      id="sponsors"
-      className="w-full relative bg-[#6b0501] flex flex-col items-center justify-start pt-36 pb-44"
+      id="pastsponsors"
+      className="w-full relative bg-[#E60012] flex flex-col items-center justify-start pt-36 pb-44"
     >
-      <img src={redpanda} alt="" className="absolute top-1  left-0 -translate-y-full" />
+      {/* Background image overlay with reduced opacity */}
+      <div 
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: `url(${RedBg})`,
+          backgroundSize: '100% auto',
+          backgroundPosition: 'top center',
+          backgroundRepeat: 'repeat-y'
+        }}
+      ></div>
+      
+      {/* <img src={redpanda} alt="" className="absolute top-1  left-0 -translate-y-full" /> */}
 
       {/* Heading */}
-      <div className="text-5xl md:text-7xl lg:text-9xl font-[superMario] font-bold text-white flex flex-col items-center px-4">
+      <div className="relative z-10 text-5xl md:text-7xl lg:text-9xl font-[superMario] font-bold text-white flex flex-col items-center px-4">
         <p
           style={{ filter: "drop-shadow(0px 8px 0px rgba(0,0,0,1))" }}
           className="text-2xl md:text-3xl lg:text-4xl z-20 text-red-600"

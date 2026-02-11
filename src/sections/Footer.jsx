@@ -13,7 +13,7 @@ import ContactCard from "../components/ContactCard";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#0064C8] relative flex flex-col items-center">
+    <div className="w-full bg-[#0064C8] relative flex flex-col items-center " id="contact">
       {/* stoned top */}
       {/* <img src={StonedBtm} className="w-full" alt="stoned-bottom" /> */}
 

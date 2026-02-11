@@ -33,7 +33,7 @@ function Events() {
 
   return (
     <div 
-      className='flex flex-col items-center py-16 md:py-24 px-4 md:px-8 relative'
+      className='flex flex-col items-center py-16 md:py-24 px-4 md:px-8 relative' id='events'
       style={{
         backgroundImage: `url(${WoodBg})`,
         backgroundSize: '100% auto',
